@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  seago:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - data-volume:/app/data
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    user: nonroot
+    restart: unless-stopped
+
+volumes:
+  data-volume:

@@ -1,0 +1,50 @@
+﻿@using SeaGo.Models
+@model SeaGo.Models.Person
+
+<h2>Register</h2>
+
+<form asp-action="Register" method="post">
+    <div>
+        <label>Name</label>
+        <input asp-for="FullName" />
+    </div>
+    <div>
+        <label>CPF</label>
+        <input asp-for="CPF" />
+    </div>
+    <div>
+        <label>Email</label>
+        <input asp-for="Email" type="email" />
+    </div>
+    <div>
+        <label>Phone</label>
+        <input asp-for="Phone" />
+    </div>
+    <div>
+        <label>Password</label>
+        <input asp-for="Password" type="password" />
+    </div>
+    <div>
+        <label>Is this for a company?</label>
+        <input type="checkbox" name="isCompany" value="true" />
+    </div>
+    <div>
+        <label>Company Name</label>
+        <input name="company.CompanyName" />
+    </div>
+    <div>
+        <label>CNPJ</label>
+        <input name="company.CNPJ" />
+    </div>
+    <div>
+        <label>Sector</label>
+        <input name="company.Sector" />
+    </div>
+    <div>
+        <label>Type of Cargo</label>
+        <input name="company.CargoType" />
+    </div>
+    <div>
+        <button type="submit">Register</button>
+    </div>
+</form>
