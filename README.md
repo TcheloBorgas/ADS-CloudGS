@@ -14,7 +14,7 @@
 
 ## [🎬Link do Vídeo Pitch](https://youtu.be/R7k_5BbKPnA) ##
 
-## [🎬Link do Vídeo de Funcionamento DOCKER]() ##
+## [🎬Link do Vídeo de Funcionamento DOCKER](https://youtu.be/Ih6GAZN9nfw) ##
 
 ## 📊Diagrama de Arquitetura 
 
