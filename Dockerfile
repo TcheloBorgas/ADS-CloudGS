@@ -10,7 +10,7 @@ RUN dotnet restore app/SeaGo.csproj
 COPY app/ ./app/
 
 # Compilar e publicar o projeto
-RUN dotnet publish app/SeaGo.csproj -c Release -o /app/out --no-restore
+RUN dotnet publish app/SeaGo.csproj -c Release -o /app/out -v n
 
 # Usar a imagem de runtime do .NET para a imagem final
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
